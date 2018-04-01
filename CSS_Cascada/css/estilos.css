@@ -1,0 +1,41 @@
+
+body
+{
+  background-color: black;
+  color: white !important;
+  font-family: verdana;
+}
+
+h1
+{
+  font-family: arial;
+}
+
+img
+{
+  background-color: white;
+}
+
+a{
+  color: inherit;
+}
+
+div
+{
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+p{
+  color:blue;
+}
+
+body p{
+  color:gray;
+}
+
+
+body
+{
+  color:red;
+}
