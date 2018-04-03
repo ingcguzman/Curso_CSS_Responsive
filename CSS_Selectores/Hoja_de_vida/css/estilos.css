@@ -1,0 +1,23 @@
+body{
+  background-color: gray;
+}
+footer{
+  margin-top: 50px;
+}
+img{
+  border-radius: 10px;
+}
+#contenedor{
+  font-family: helvetica;
+  font-size: 16px;
+}
+#encabezado{
+  display:block;
+  margin: 0 auto;
+}
+.itemindice{
+  list-style: upper-roman;
+}
+.enlace{
+  color: red;
+}
