@@ -1,11 +1,54 @@
-article[class^='caja']{
-  border: 4px solid blue;
-  display: inline-block;
-  height: 220px;
-  width: 400px;
-  text-align: justify;
+body {
+	margin-left: 15%;
+	font-family: Verdana;
+/*-- El atributo WIDTH es que define el ancho de la pantalla que se va a utilizar.
+     con el valor del 43% el contenido sale en 6 lineas. Si se coloca width:75%, el
+		 contenido se muestra en tres lineas. OJO. */
+	width: 43%;
+	color: #605B56;
+}
+
+header h1{
+	padding-left: 10px;
+}
+
+#menu-principal ul{
+  float:left;
+  width:200px;
+  padding: 0;
+  margin: 0;
+}
+
+#menu-principal ul li{
+  list-style-type: none;
   padding: 10px;
 }
-.caja1{
-  margin : 50px 20px 50px 20px;
+
+#contenido {
+  margin-left: 200px;
+	padding: 10px;
+	background-color: F9F7F3;*/
+}
+
+/*--#contenido p{
+  border: 4px none green;
+  display:inline-block;
+  height: 200px;
+  width:300px;
+  background-color: F9F7F3;
+  padding: 10px;
+  text-align:right;
+}
+*/
+#contenido p img{
+  float:right;
+}
+
+
+footer {
+	clear: both;
+	border-top: solid 2px #605B56;
+	padding-top: 10px;
+	margin-top: 15px;
+	text-align: center;
 }
