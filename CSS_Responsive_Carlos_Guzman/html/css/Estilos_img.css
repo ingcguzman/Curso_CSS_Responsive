@@ -1,0 +1,211 @@
+/*-- Fuente Dancing Script vinculada al proyecto --*/
+@font-face {
+	font-family: 'fuenteDancingScript';
+	src:url(../fuentes/Dancing-Script.ttf);
+}
+
+/*-- Estilos generales del cuerpo --*/
+body {
+	width: 65%;
+	margin-left: 20%;
+	background-color: #02010a;
+	padding: 0;
+	font-family: fuenteDancingScript;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/* -- Estilo general de sombras para las imagenes --*/
+img{
+	box-shadow: 2px 2px 2px 2px #02010a;
+}
+
+/*-- Estilos para el encabezado --*/
+#encabezado{
+  background: #5b7989;
+  height: 11vh;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.contenido img{
+	height: 100%;
+}
+
+header h1{
+  float: left;
+  margin: 3vh 0 0 4vw;
+  font-size: 1.5em;
+  text-shadow: 0 0 2px  #02010a;
+}
+
+a{
+  color: white;
+}
+
+/*-- Estilos del menu de navegación --*/
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 1.5vh;
+}
+
+nav ul li{
+	font-size: 1.2em;
+  display: inline;
+  line-height: 11vh;
+}
+
+
+
+/*-- Estilos para las imagenes --*/
+/* -- Estilos para Desktop --*/
+@media (min-width:901px){
+	.agrupamiento{
+		background: #d5c75f;
+  	display: flex;
+  	flex-direction: row;
+	}
+
+	.contenido{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.imagen1, .imagen2, .imagen3{
+		margin: 20px 40px 20px 35px;
+  	width: 25%;
+	}
+
+	.imagen4, .imagen5, .imagen6{
+		margin: 20px 40px 20px 35px;
+		width: 25%;
+	}
+
+	/* -- Filtros para las imagenes  - Para Desktop --*/
+	.imagen1{
+		filter: blur(10px);
+	}
+
+	.imagen2, .imagen4, .imagen6{
+		filter: grayscale(100%);
+	}
+
+	.imagen3{
+		filter: sepia(90%);
+	}
+}
+
+/*-- Estilos para moviles --*/
+@media (max-width:900px){
+
+	body{
+		width: 96%;
+		margin-left: 2%;
+	}
+
+	#encabezado{
+		height: 18vh;
+	}
+
+	#encabezado h1{
+		text-align: center;
+	}
+
+	.contenido{
+		background: #d5c75f;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.imagen1, .imagen2, .imagen3{
+		margin: 1px;
+		margin-top: 15px;
+  	width: 100%;
+	}
+
+	.imagen4, .imagen5, .imagen6{
+		margin: 1px;
+		margin-top: 15px;
+		width: 100%;
+	}
+	/* -- Filtros para las imagenes - Para movil --*/
+	.imagen1{
+		filter: blur(10px);
+	}
+
+	.imagen2, .imagen4, .imagen6{
+		filter: grayscale(100%);
+	}
+
+	.imagen3{
+		filter: sepia(90%);
+	}
+}
+
+/* -- Estilos para el pie de página --*/
+/* -- Estilos para Desktop --*/
+@media (min-width:901px){
+	#piedePagina{
+		border-radius: 0 0 10px 10px;
+		background: #C6d5c5;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.contacto, .terminos, .redes, .derechos{
+		width: 25%;
+		margin-left: 5vh;
+	}
+
+	.logos{
+		width: 20px;
+		height: 20px;
+	}
+
+	#piedePagina h2{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#piedePagina p{
+		margin: 0px;
+	}
+}
+
+/* -- Estilos de pie de pagina para moviles --*/
+@media (max-width:900px){
+	#piedePagina{
+		width: 100%;
+		background: #C6d5c5;
+		border-radius: 0 0 10px 10px;
+		display: flex;
+		margin: 0;
+		border: 1px;
+		flex-direction: column;
+	}
+
+	.contacto, .terminos, .redes, .derechos{
+		width: 100%;
+		margin-left: 5vh;
+	}
+
+	.logos{
+		width: 20px;
+		height: 20px;
+	}
+
+	#piedePagina h2{
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	#piedePagina p{
+		margin: 0px;
+	}
+}

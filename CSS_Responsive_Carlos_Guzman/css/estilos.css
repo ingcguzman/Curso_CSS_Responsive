@@ -1,0 +1,195 @@
+/*-- Fuente Dancing Script vinculada al proyecto --*/
+@font-face {
+	font-family: 'fuenteDancingScript';
+	src:url(../fuentes/Dancing-Script.ttf);
+}
+
+/*-- Estilos generales del cuerpo --*/
+body {
+	width: 65%;
+	margin-left: 20%;
+	background-color: #02010a;
+	padding: 0;
+	font-family: fuenteDancingScript;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/* -- Estilo general de sombras para las imagenes --*/
+img{
+	box-shadow: 2px 2px 2px 2px #02010a;
+}
+
+/*-- Estilos para el encabezado --*/
+#encabezado{
+  background: #5b7989;
+  height: 11vh;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+header h1{
+  float: left;
+  margin: 3vh 0 0 4vw;
+  font-size: 1.5em;
+  text-shadow: 0 0 2px  #02010a;
+}
+
+a{
+  color: white;
+}
+
+/*-- Utiliza clase para no presentar el subrayado en el enlace de inicio.
+     Para las otras páginas se utilizó la propiedad Style dentro de la etiqueta --*/
+a.Nosubrayada{
+  text-decoration: none;
+}
+
+/*-- Estilos del menu de navegación --*/
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 1.5vh;
+}
+
+nav ul li{
+	font-size: 1.2em;
+  display: inline;
+  line-height: 11vh;
+}
+
+/*-- Estilos para la Imagen Principal --*/
+.ImagenPrincipal{
+  background: #82c3a6;
+}
+
+.ImagenPrincipal img{
+  width: 80%;
+  margin-left: 10%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+/*-- Estilos para las Imagenes Secundarias --*/
+/* -- Estilos para Desktop --*/
+@media (min-width:901px){
+	.ImagenesSecundarias{
+		width: 100%;
+	  background: #d5c75f;
+		display: flex;
+		margin: 0;
+		border: 1px;
+		flex-direction: row;
+	}
+	.Contenedor img{
+		margin: 2%;
+		width: 42%;
+	}
+
+	.Contenedor .a1{
+		position: relative;
+		bottom: -25px;
+		left:-400px;
+	}
+	.Contenedor .a2{
+		position: relative;
+		left:500px;
+	}
+}
+
+/* -- Animación de las imagenes secundarias --
+      para Desktop --*/
+.Contenedor .paisajes:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+.Contenedor .retratos:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+
+/*-- Estilos para moviles - Encabezado e Imagenes Secundarias --*/
+@media (max-width:900px){
+
+	body{
+		width: 96%;
+		margin-left: 2%
+	}
+
+	#encabezado{
+		height: 18vh;
+	}
+	#encabezado h1{
+		text-align: center;
+	}
+
+	.ImagenesSecundarias{
+		width: 100%;
+		background: #d5c75f;
+		display: flex;
+		margin: 0;
+		border: 1px;
+		flex-direction: column;
+	}
+
+	.Contenedor img{
+		width: 100%;
+		}
+}
+
+/* -- Estilos para el pie de página --*/
+/* -- Estilos para Desktop --*/
+@media (min-width:901px){
+	#piedePagina{
+		border-radius: 0 0 10px 10px;
+		background: #C6d5c5;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.contacto, .terminos, .redes, .derechos{
+		width: 25%;
+		margin-left: 5vh;
+	}
+
+	.logos{
+		width: 20px;
+		height: 20px;
+	}
+
+	#piedePagina p{
+		margin: 0px;
+	}
+}
+
+/* -- Estilos pie de pagina para moviles --*/
+@media (max-width:900px){
+	#piedePagina{
+		width: 100%;
+		background: #C6d5c5;
+		border-radius: 0 0 10px 10px;
+		display: flex;
+		margin: 0;
+		border: 1px;
+		flex-direction: column;
+	}
+
+	.contacto, .terminos, .redes, .derechos{
+		width: 100%;
+		margin-left: 5vh;
+	}
+
+	.logos{
+		width: 20px;
+		height: 20px;
+	}
+
+	#piedePagina p{
+		margin: 0px;
+	}
+}
